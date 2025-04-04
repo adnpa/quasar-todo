@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Quasar Todo</string>
+    <string name="title_activity_main">Quasar Todo</string>
+    <string name="package_name">com.hz.quasartodo</string>
+    <string name="custom_url_scheme">com.hz.quasartodo</string>
+</resources>

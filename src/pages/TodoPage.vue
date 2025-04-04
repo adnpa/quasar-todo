@@ -86,9 +86,9 @@ const $q = useQuasar()
 const newTask = ref("")
 
 const tasks = reactive([
-  { title: "Get abc", done: false },
-  { title: "bbb abc", done: false },
-  { title: "ccc abc", done: false },
+  { title: "task1", done: false },
+  { title: "task2", done: false },
+  { title: "task3", done: false },
 ])
 
 function addTask() {
@@ -106,8 +106,7 @@ function deleteTask(idx) {
     cancel: true,
     persistent: true,
   }).onOk(() => {
-    console.log(idx)
-    this.tasks.splice(idx, 1)
+    tasks.splice(idx, 1)
     $q.notify("Task Deleted")
   })
 }
